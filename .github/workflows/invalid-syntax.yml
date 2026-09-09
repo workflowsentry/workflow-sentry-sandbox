@@ -1,0 +1,8 @@
+name: Invalid Syntax Scenario
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run echo "faltou o dois-pontos depois de run, propositalmente"
