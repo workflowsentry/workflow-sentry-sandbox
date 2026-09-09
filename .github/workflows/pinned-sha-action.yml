@@ -1,0 +1,8 @@
+name: Pinned SHA Scenario
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3
+      - run: echo "cenario: pin por SHA, deve ser 'nao determinavel', nao 'desatualizado'"
