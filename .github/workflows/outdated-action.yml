@@ -1,0 +1,11 @@
+name: Outdated Action Scenario
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - run: echo "cenario: versoes antigas de action, sem cache"
